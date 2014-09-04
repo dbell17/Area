@@ -1,6 +1,6 @@
 <%-- 
-    Document   : result
-    Created on : Sep 3, 2014, 6:05:07 PM
+    Document   : triangleResult.jsp
+    Created on : Sep 3, 2014, 9:28:46 PM
     Author     : dbell17
 --%>
 
@@ -9,13 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Area Calculator</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1><center>Rectangle Area is 
+        <h1><center>Side of Triangle is 
 
             <%
-                Object obj = request.getAttribute("totalArea");
+                Object obj = request.getAttribute("totalTriangleSide");
                 if (obj == null) {
                     out.println("Sorry Calculation Failed.  Try again.");
                 } else {
@@ -24,6 +24,5 @@
 
                 %></center>
         </h1>
-      
     </body>
 </html>

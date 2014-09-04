@@ -1,6 +1,6 @@
 <%-- 
-    Document   : result
-    Created on : Sep 3, 2014, 6:05:07 PM
+    Document   : circleResult
+    Created on : Sep 3, 2014, 9:00:47 PM
     Author     : dbell17
 --%>
 
@@ -9,13 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Area Calculator</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1><center>Rectangle Area is 
+        <h1><center>Area of circle is 
 
             <%
-                Object obj = request.getAttribute("totalArea");
+                Object obj = request.getAttribute("totalCircleArea");
                 if (obj == null) {
                     out.println("Sorry Calculation Failed.  Try again.");
                 } else {
@@ -24,6 +24,5 @@
 
                 %></center>
         </h1>
-      
     </body>
 </html>
