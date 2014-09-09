@@ -15,14 +15,17 @@
         <h1><center>Area of circle is 
 
             <%
-                Object obj = request.getAttribute("totalCircleArea");
-                if (obj == null) {
-                    out.println("Sorry Calculation Failed.  Try again.");
-                } else {
-                    out.println(obj.toString());
-                }
+ 
+//               Object obj = request.getAttribute("totalCircleArea");
+//             if (obj == null) {
+//               out.println("Sorry Calculation Failed.  Try again.");
+//         } else {
+//           out.println(obj.toString());
+//     }
 
-                %></center>
+                %>
+                ${totalCircleArea}
+            </center>
         </h1>
     </body>
 </html>

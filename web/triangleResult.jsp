@@ -13,16 +13,19 @@
     </head>
     <body>
         <h1><center>Side of Triangle is 
+                
 
             <%
-                Object obj = request.getAttribute("totalTriangleSide");
-                if (obj == null) {
-                    out.println("Sorry Calculation Failed.  Try again.");
-                } else {
-                    out.println(obj.toString());
-                }
+//                Object obj = request.getAttribute("totalTriangleSide");
+//                if (obj == null) {
+//                    out.println("Sorry Calculation Failed.  Try again.");
+//                } else {
+//                    out.println(obj.toString());
+//                }
 
-                %></center>
+                %>
+             ${totalTriangleSide}
+            </center>
         </h1>
     </body>
 </html>

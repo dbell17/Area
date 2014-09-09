@@ -40,7 +40,7 @@ public class MainTriangleController extends HttpServlet {
         double totalTriangleSide = areaCalculator.calculateTriangleSide(sideA, sideB);
         request.setAttribute("totalTriangleSide", totalTriangleSide);
 
-        RequestDispatcher view = request.getRequestDispatcher("triangleResult.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("index.jsp");
         view.forward(request, response);
 
     }

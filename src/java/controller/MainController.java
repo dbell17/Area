@@ -36,7 +36,7 @@ public class MainController extends HttpServlet {
         int totalArea = areaCalculator.calculateArea(length, width);
         request.setAttribute("totalArea", totalArea);
 
-        RequestDispatcher view = request.getRequestDispatcher("result.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("index.jsp");
         view.forward(request, response);
 
     }

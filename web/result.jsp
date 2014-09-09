@@ -15,14 +15,22 @@
         <h1><center>Rectangle Area is 
 
             <%
-                Object obj = request.getAttribute("totalArea");
+               /* 
+                       Object obj = request.getAttribute("totalArea");
                 if (obj == null) {
                     out.println("Sorry Calculation Failed.  Try again.");
                 } else {
                     out.println(obj.toString());
                 }
-
-                %></center>
+                       */
+                
+                %>
+                ${totalArea}
+               
+                
+                
+                
+            </center>
         </h1>
       
     </body>
